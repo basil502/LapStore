@@ -1,6 +1,5 @@
 import React from 'react';
-import iconEdit from '../assets/iconEdit.svg';
-import iconDelete from '../assets/iconDelete.gif';
+import { Edit3, Trash2 } from 'lucide-react'; // Replace with icons you like
 import '../styles/laptopCard.css';
 
 function LaptopCard({ laptop, onDelete, onEdit, onClick }) {
@@ -19,24 +18,29 @@ function LaptopCard({ laptop, onDelete, onEdit, onClick }) {
       <div>
         <h3>{model_name}</h3>
         {company?.cmpny_name && <p className="company">{company.cmpny_name}</p>}
-        <p>LapCode  : {lap_code}</p>
+        <p>Model No  : {lap_code}</p>
         <p>Processor: {processor}</p>
         <p className="price">₹{price}</p>
         {(status === false || status === 'false' || status === 'out of stock') && (
           <h4 className="stock">Out of Stock</h4>
         )}
       </div>
-      <div className="buttons" onClick={(e) => e.stopPropagation()}> {/* ✅ Prevent click bubbling */}
-        <button type="button" onClick={onEdit} className="icon-button">
-          <img src={iconEdit} alt="Edit" className="icon" />
-        </button>
-        <button type="button" onClick={(e) => {
-          e.stopPropagation(); // ✅ Prevent card click when delete is clicked
-          onDelete(lap_id);
-        }} className="icon-button">
-          <img src={iconDelete} alt="Delete" className="icon" />
-        </button>
-      </div>
+<div className="buttons" onClick={(e) => e.stopPropagation()}>
+  <button type="button" onClick={onEdit} className="icon-button">
+    <Edit3 size={20} strokeWidth={2} />
+  </button>
+  <button
+    type="button"
+    onClick={(e) => {
+      e.stopPropagation();
+      onDelete(lap_id);
+    }}
+    className="icon-button"
+  >
+    <Trash2 size={20} strokeWidth={2} />
+  </button>
+</div>
+
     </div>
   );
 }

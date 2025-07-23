@@ -13,7 +13,7 @@ function LaptopDetailsModal({ laptop, onClose }) {
         <p className="modal-brand">{laptop.company?.cmpny_name}</p>
 
         <div className="modal-details">
-          <p><span>Code:</span> {laptop.lap_code}</p>
+          <p><span>Model No:</span> {laptop.lap_code}</p>
           <p><span>Processor:</span> {laptop.processor}</p>
           {laptop.graphicsCard && <p><span>Graphics:</span> {laptop.graphicsCard}</p>}
           {laptop.memory && <p><span>Memory:</span> {laptop.memory}</p>}
@@ -21,7 +21,7 @@ function LaptopDetailsModal({ laptop, onClose }) {
           {laptop.colour && <p><span>Color:</span> {laptop.colour}</p>}
           <p className="modal-price">₹ {laptop.price}</p>
           <p className={`modal-status ${laptop.status ? 'available' : 'out-stock'}`}>
-            {laptop.status ? 'In Stock' : 'Out of Stock'}
+            {laptop.status ? '' : 'Out of Stock'}
           </p>
         </div>
       </div>

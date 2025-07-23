@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Laptop } from 'lucide-react'; 
 import '../styles/header.css';
 
 function Header({ onSort , onToggleFilter }) {
@@ -17,8 +18,9 @@ function Header({ onSort , onToggleFilter }) {
 
   return (
     <div className="header">
-      <h1 className="title">🖥️ Lapstore</h1>
-      <div className="header-buttons">
+      <h1 className="brand-title">
+        <Laptop className="brand-icon" /> Lap<span className="highlight">Store</span>
+      </h1>      <div className="header-buttons">
         <div className="sort-dropdown">
           <button
             className="header-icon-btn"

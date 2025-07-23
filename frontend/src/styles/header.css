@@ -1,90 +1,90 @@
-/* Header layout */
+/* Header Container */
 .header {
-  background-color: #232f3e; /* Amazon dark blue */
-  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 32px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  padding: 16px 28px;
+  background-color: #1e2a38;
+  color: #ffffff;
   position: fixed;
+  top: 0;
   right: 0;
   left: 0;
-  top: 0;
-  height: 4rem;
   z-index: 100;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-.title {
-  font-size: 35px;
+/* Brand Title */
+.brand-title {
+  font-size: 28px;
   font-weight: bold;
-  margin: 0;
-  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-/* Button container */
+.brand-icon {
+  width: 30px;
+  height: 30px;
+  color: #ffd60a;
+}
+
+.highlight {
+  color: #ffd60a;
+}
+
+/* Header Buttons */
 .header-buttons {
   display: flex;
-  gap: 12px;
+  gap: 20px;
+  align-items: center;
 }
 
-/* Icon-style button */
+/* Text-only Buttons */
 .header-icon-btn {
-  background-color: #232f3e; /* vibrant blue */
-  color: white;
+  background: none;
   border: none;
-  padding: 8px 16px;
-  font-size: 18px;
-  font-weight: 500;
-  border-radius: 6px;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 6px 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
-.header-buttons button{
-  outline: none;
-}
+
 .header-icon-btn:hover {
-  color: #008ec2;
+  color: #ffd60a;
 }
 
-/* Logout-specific style (optional) */
-.logout {
-  background-color: #232f3e;
-  color: red;
-  margin-right: 3rem;
-}
-
-.logout:hover {
-  color: #b10505;
-}
+/* Dropdown */
 .sort-dropdown {
   position: relative;
 }
 
 .dropdown-menu {
   position: absolute;
-  top: 38px;
-  right: 0;
+  top: 110%;
+  left: 0;
   background: #ffffff;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 20;
   min-width: 180px;
-  display: flex;
-  flex-direction: column;
 }
 
 .dropdown-menu button {
-  padding: 10px 14px;
   background: none;
   border: none;
+  padding: 10px 16px;
+  width: 100%;
   text-align: left;
   font-size: 14px;
+  color: #2c3e50;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
 
 .dropdown-menu button:hover {
-  background-color: #f0f0f0;
+  background-color: #f4f6f8;
 }
