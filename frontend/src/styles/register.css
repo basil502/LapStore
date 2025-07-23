@@ -1,0 +1,99 @@
+/* login.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #EAEDED;
+  font-family: Arial, sans-serif;
+  color: #232F3E;
+}
+
+.register-container {
+  margin: 80px auto;
+  padding: 30px 40px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #FFFFFF;
+  border: 1px solid #D5D9D9;  width: 300px;
+}
+
+.register-containerh2 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #232F3E;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #232F3E;
+}
+
+input {
+  background-color: #fff;
+  border: 1px solid #D5D9D9;
+  color: #111;
+  padding: 10px 12px;
+  margin-bottom: 19px;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 90%;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+
+.error {
+  color: #B12704;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  margin-right: 9rem;
+  width: 90%;
+}
+
+.register-button {
+  background-color: #FF9900;
+  color: #111;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #e68a00;
+}
+.login-prompt {
+  margin-top: 10px;
+  text-align: left;
+  display: flex;
+}
+
+.login-prompt button {
+    margin-top: -7px;
+    background: none;
+    outline: none;
+    position: relative;
+    margin-left: -150px;
+}
+.login-prompt button:hover {
+  background: none;
+  color: #FF9900;
+}
+.login-prompt p {
+    width: 36rem;
+    margin: 0;
+}

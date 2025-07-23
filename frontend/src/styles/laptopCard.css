@@ -1,0 +1,104 @@
+.laptop-card {
+  background: linear-gradient(to bottom right, #f9f9f9, #ffffff);
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  padding: 24px;
+  margin: 20px;
+  width: 210px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  border: 1px solid #eee;
+}
+
+.laptop-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
+}
+
+.laptop-card h3 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.laptop-card p {
+  font-size: 15px;
+  color: #050505;
+  margin: 6px 0;
+  line-height: 1.5;
+}
+
+.laptop-card .company {
+  font-weight: bold;
+  color: #2c3e50;
+  font-size: 16px;
+  background-color: #eaf2f8;
+  padding: 5px 10px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.laptop-card .price {
+  color: #27ae60;
+  font-weight: 800;
+  font-size: 17px;
+}
+
+.laptop-card .stock {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.laptop-card .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+  gap: 14px;
+}
+
+/* Icon Button Styling */
+.icon-button {
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  padding: 10px;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  background-color: #d1e8ff;
+  border-color: #3498db;
+}
+
+.icon-button:active {
+  transform: scale(0.95);
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  display: block;
+  filter: drop-shadow(0 0 0.5px rgba(0, 0, 0, 0.1));
+}
+
+/* Card container layout */
+.laptop-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+  justify-content: flex-start;
+  padding: 20px;
+}

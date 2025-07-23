@@ -1,0 +1,105 @@
+
+input {
+  background-color: #fff;
+  border: 1px solid #D5D9D9;
+  color: #111;
+  padding: 10px 12px;
+  margin-bottom: 19px;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 90%;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+
+.error {
+  color: #B12704;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  margin-right: 9rem;
+  width: 90%;
+}
+select {
+  background-color: #fff;
+  border: 1px solid #D5D9D9;
+  color: #111;
+  padding: 10px 12px;
+  margin-bottom: 19px;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 95%;
+}
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+        .error { color: red; }
+        .success { color: green; }
+        .info { color: blue; }
+
+
+        .increment-decrement {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.increment-decrement button {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 20px;
+  user-select: none;
+  transition: background-color 0.2s ease;
+}
+
+.increment-decrement button:hover {
+  background-color: #e0e0e0;
+}
+
+.increment-decrement input {
+  font-size: 16px;
+  padding: 4px 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.add-button {
+  background-color: #FF9900;
+  color: #111;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  margin-bottom: 3px;
+}
+
+.add-button:hover {
+  background-color: #e68a00;
+}
+.close-button {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: #c0392b;
+}

@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #EAEDED;
+  font-family: Arial, sans-serif;
+  color: #232F3E;
+}
+
+
+.addlap{
+  width: 25%;
+}
+.viewlap{
+  width: 70%;
+  margin-top: 60px;
+}
+
+

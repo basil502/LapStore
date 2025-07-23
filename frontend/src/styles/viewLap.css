@@ -1,0 +1,22 @@
+.laptops {
+  position:absolute;
+  top: 4rem;
+  left: 0;  
+  margin: 0;
+  padding: 30px 40px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #FFFFFF;
+  border: 1px solid #D5D9D9;  width: 300px;
+  width: 100%;
+  display: flex;
+}
+.stock{
+  color: red;
+  font-weight: bold;
+}
+.no-data-message{
+    color: red;
+    margin-left: 25rem;
+    margin-top: 10rem;
+}

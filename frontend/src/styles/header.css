@@ -1,0 +1,90 @@
+/* Header layout */
+.header {
+  background-color: #232f3e; /* Amazon dark blue */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  height: 4rem;
+  z-index: 100;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0;
+  margin-left: 1rem;
+}
+
+/* Button container */
+.header-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+/* Icon-style button */
+.header-icon-btn {
+  background-color: #232f3e; /* vibrant blue */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.header-buttons button{
+  outline: none;
+}
+.header-icon-btn:hover {
+  color: #008ec2;
+}
+
+/* Logout-specific style (optional) */
+.logout {
+  background-color: #232f3e;
+  color: red;
+  margin-right: 3rem;
+}
+
+.logout:hover {
+  color: #b10505;
+}
+.sort-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 38px;
+  right: 0;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 100;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-menu button {
+  padding: 10px 14px;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-menu button:hover {
+  background-color: #f0f0f0;
+}
